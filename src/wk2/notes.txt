@@ -1,0 +1,11 @@
+Task 1
+Modify budget (budget2)
+Ask the user for a limit
+    Make sure limit is between 200 and 1000
+        if not, end the program: "Sorry, but you entered invalid values"
+
+Only allow user to enter and expense value that is 15% or less than their budget
+    if not, break out of loop and output sorry message
+
+Bonus: allow user enter a yearly value and you transform it to a
+        monthly value
