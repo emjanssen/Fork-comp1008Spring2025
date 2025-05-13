@@ -9,3 +9,21 @@ Only allow user to enter and expense value that is 15% or less than their budget
 
 Bonus: allow user enter a yearly value and you transform it to a
         monthly value
+
+
+
+Notes
+
+Two Classes
+    Expense
+        Name
+        Amount
+    Budget
+        Series/Collection of Expenses ^
+        minLimit, maxLimit, limit
+        maxOneTimePurchase
+
+getters and setters
+    used only for private instance variables
+    gives access to an otherwise inaccessible instance variable
+

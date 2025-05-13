@@ -94,8 +94,46 @@ public class Week2 {
         }
     }
 
+    public static void budget3(){
+
+        Budget budget = new Budget();
+        budget.setMinLimit(200);
+        budget.setMaxLimit(1000);
+        budget.setLimit(3000);
+        System.out.println(budget.getLimit());
+
+        Console console = System.console();
+
+        for(int i = 0; i < 3; i++){
+
+            System.out.println("Enter an expense name");
+            String expenseName = console.readLine();
+            System.out.println("Enter the monthly amount for " + expenseName + ": ");
+            double expenseAmount = Double.parseDouble(console.readLine());
+
+            Expense expense = new Expense();
+            expense.name = expenseName;
+            expense.setAmount(expenseAmount);
+            budget.expenses.add(expense);
+        }
+
+        System.out.println("Here are your expenses");
+
+       for(Expense expense : budget.expenses){
+           System.out.printf("Expense Name = %s, Expense Amount = $%.2f\n", expense.name, expense.getAmount());
+       }
+
+
+    }
     public static void main(String[] args) {
-        budget2();
+        budget3();
+        //String string = "";
+
+//        Expense expense = new Expense();
+//        expense.name = "Food";
+//        expense.setAmount(10);
+//
+
     }
 
 }
