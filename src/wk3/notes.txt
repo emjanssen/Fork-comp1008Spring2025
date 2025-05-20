@@ -1,0 +1,22 @@
+accessibility levels
+    public
+    private
+    protected
+    default/package private
+
+Tasks
+
+You will create a fighting game
+2 classes
+    FightingGame
+    Fighter/Player
+        instance variables: -name, health, power
+        methods:
+            name: String: limit: 3 chars or more
+            health: int/double: limit: b/t 50 - 100
+            power: int/double: limit: 5-10
+            attack/getAttacked: decreases health
+                                enforce power limits
+            isAlive(): if health > 0
+            constructor: default, 3-args constructor (name, health, power)
+            toString: summarize: name, health, power

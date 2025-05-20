@@ -25,4 +25,12 @@ public class Expense {
     public double getAmount(){
             return amount;
     }
+
+    public Expense(){}
+    public Expense(String name, double amount){
+        this.name = name;
+        setAmount(amount);
+    }
+
+
 }
