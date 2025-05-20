@@ -9,6 +9,15 @@ Tasks
 You will create a fighting game
 2 classes
     FightingGame
+
+        ArrayList of 2 Fighters
+            -one constructor: 2 Fight objects
+        method: fight()
+            randomly select an attacker and a victim
+                attacker attacks victim
+            determine if both Fighters are alive
+                Yes: continue fighting
+                No: end game as a fighter was won
     Fighter/Player
         instance variables: -name, health, power
         methods:
