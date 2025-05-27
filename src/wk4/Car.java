@@ -32,7 +32,8 @@ public class Car {
     }
 
     public void setMake(String make) {
-        this.make = make;
+
+        this.make = make.length() >= 3 ? make : "Toyota";
     }
 
     public String getModel() {
@@ -48,7 +49,7 @@ public class Car {
     }
 
     public void setDoors(int doors) {
-        this.doors = doors;
+        this.doors = doors >= 2 && doors <= 5 ? doors : 2;
     }
 
     public int getSeats() {
@@ -56,7 +57,7 @@ public class Car {
     }
 
     public void setSeats(int seats) {
-        this.seats = seats;
+        this.seats = seats >=2 && seats <= 8 && seats != 3 ? seats : 2;
     }
 
     public int getWheels() {
@@ -64,6 +65,6 @@ public class Car {
     }
 
     public void setWheels(int wheels) {
-        this.wheels = wheels;
+        this.wheels = wheels == 4 || wheels == 6 ? wheels : 4;
     }
 }
