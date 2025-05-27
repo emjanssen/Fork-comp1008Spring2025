@@ -1,0 +1,21 @@
+Re-Create the Go Train System using Java
+
+Train
+    Line
+
+Trip
+    departing: Station
+    destination: Station
+    fare: double
+    presto: PaymentCar
+
+Station
+    name: String
+
+PaymentCard
+    balance: double
+
+Line
+    array of Stations
+    Station: terminusStart: always Union
+    Station: terminusEnd: another station in Array of Stations

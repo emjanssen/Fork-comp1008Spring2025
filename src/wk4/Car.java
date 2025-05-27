@@ -5,6 +5,7 @@ public class Car {
     public static String[] AVAILABLE_COLORS = "red,white,black,blue".split(",");
     private String color = AVAILABLE_COLORS[0], make = "Toyota", model = "Camry";
     private int doors=2, seats=2, wheels=4;
+    private final String vin;
 
     //alt+insert
 
@@ -67,4 +68,40 @@ public class Car {
     public void setWheels(int wheels) {
         this.wheels = wheels == 4 || wheels == 6 ? wheels : 4;
     }
+
+
+    public Car(){
+        vin = "ABC123";
+    }
+    public Car(String color, String make, String model){
+        this.vin = "CMM3594752";
+        setColor(color);
+        setMake(make);
+        setModel(model);
+    }
+    public Car(String color, String make, String model, int doors, int seats, int wheels) {
+        setColor(color);
+        setMake(make);
+        setModel(model);
+        setDoors(doors);
+        setSeats(seats);
+        setWheels(wheels);
+        vin = "EFG987";
+    }
+
+    public Car(String color, String make, String model, int doors, int seats, int wheels, String vin) {
+        setColor(color);
+        setMake(make);
+        setModel(model);
+        setDoors(doors);
+        setSeats(seats);
+        setWheels(wheels);
+        this.vin = vin;
+    }
+
+    public Car(String vin, int wheels, int seats, int doors, String model, String make, String color) {
+        this(color, make, model, doors, seats, wheels, vin);
+    }
+
+
 }
