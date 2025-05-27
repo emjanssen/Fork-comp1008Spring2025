@@ -15,6 +15,18 @@ public class Week4 {
         barrieLine.setStations(stations);
         barrieLine.setStartingStation(stations[stations.length-1]);
         barrieLine.setEndingStation(stations[0]);
+
+        PaymentCard presto = new PaymentCard(100);
+        Train goBarrie = new Train(barrieLine);
+
+        Trip trip = new Trip();
+        trip.setTrain(goBarrie);
+        trip.setDeparting(barrieLine.getStations()[1]);
+        trip.setDestination(barrieLine.getStations()[3]);
+        trip.setPresto(presto);
+        trip.setFare();
+        System.out.println(trip.getPresto().getBalance());
+
     }
     static void example2(){
 
