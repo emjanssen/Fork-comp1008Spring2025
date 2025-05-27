@@ -7,7 +7,7 @@ Trip
     departing: Station
     destination: Station
     fare: double
-    presto: PaymentCar
+    presto: PaymentCard
 
 Station
     name: String

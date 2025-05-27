@@ -6,6 +6,25 @@ public class Week4 {
 
     public static void main(String[] args) {
 
+        Station[] stations = {new Station("Allendale"),
+        new Station("Barrie South"), new Station("Bradford"),
+        new Station("Newmarket"), new Station("Aurora"),
+        Station.UnionStation()};
+
+        Line barrieLine = new Line();
+        barrieLine.setStations(stations);
+        barrieLine.setStartingStation(stations[stations.length-1]);
+        barrieLine.setEndingStation(stations[0]);
+    }
+    static void example2(){
+
+
+        Person adult = Person.Adult();
+        System.out.println(adult.age);
+
+
+    }
+    static void example1(){
         Console console = System.console();
 
         System.out.println("You will enter car information");
@@ -29,7 +48,6 @@ public class Week4 {
                     cars[i].getModel(), cars[i].getColor());
 
         }
-
 
 
     }
