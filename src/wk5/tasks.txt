@@ -1,0 +1,28 @@
+Appointment Application
+
+Host: one or many. Make it one
+Participant. Many
+__________________________________
+
+Date
+    String/int month, dow
+    int day, year
+    * enforce restrictions
+Time
+    int hour, minute
+    String to represent am or pm
+    * enforce restrictions
+
+Location
+    String: name
+
+Duration
+    int: minutes: 5-max hours * 60
+
+Meeting
+    Date, Time, Duration, Location
+    Host
+    List of Participants
+    Description
+
+In a class with a main method: use aka instantiate all classes

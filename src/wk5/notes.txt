@@ -1,0 +1,33 @@
+A Quiz has many ________: Question
+
+a _______ takes a quiz : Participant
+
+At the end of a quiz, a Participant has a ________: Score
+
+Each ________ has a text and an answer: Question
+
+In MCQ a _______ has many _______: Question, Options (QuestionOptions)
+
+Participant
+    Score
+Question
+    questionText: S
+    answer: S
+    options: arraylist<questionoption>
+Score
+    ofquiz: Quiz
+    int correct, total;
+QuestionOption
+    text: s
+Quiz
+    questions: arraylist<question>
+
+
+BE BACK AT 6:50
+
+Game
+    quizTaken: Quiz
+    partipicants: arraylist<partcipant>
+
+
+
