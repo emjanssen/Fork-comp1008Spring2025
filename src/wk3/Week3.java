@@ -20,7 +20,7 @@ public class Week3 {
 
     }
 
-    static void example1(){
+    /* static void example1(){
         System.out.println("Welcome to our Budgeting app");
         System.out.println("What monthly limit do you want to have?");
         Console console = System.console();
@@ -31,5 +31,5 @@ public class Week3 {
         budget.run();
         System.out.println(budget.toString());
 
-    }
+    } unused for fighting game */
 }

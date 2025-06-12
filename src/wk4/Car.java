@@ -35,6 +35,7 @@ public class Car {
     public void setMake(String make) {
 
         this.make = make.length() >= 3 ? make : "Toyota";
+        // if length of make is 3 or more, set make to toyota
     }
 
     public String getModel() {
@@ -51,6 +52,7 @@ public class Car {
 
     public void setDoors(int doors) {
         this.doors = doors >= 2 && doors <= 5 ? doors : 2;
+        // If the number of doors is between 2 and 5 (inclusive), use that value; otherwise, default to 2
     }
 
     public int getSeats() {
@@ -59,6 +61,8 @@ public class Car {
 
     public void setSeats(int seats) {
         this.seats = seats >=2 && seats <= 8 && seats != 3 ? seats : 2;
+        // Use the given value if it's between 2 and 8 (inclusive), but not 3; otherwise, default to 2
+
     }
 
     public int getWheels() {
@@ -67,12 +71,13 @@ public class Car {
 
     public void setWheels(int wheels) {
         this.wheels = wheels == 4 || wheels == 6 ? wheels : 4;
+        // If the wheel count is 4 or 6, use that value; otherwise, default to 4
     }
-
 
     public Car(){
         vin = "ABC123";
     }
+
     public Car(String color, String make, String model){
         this.vin = "CMM3594752";
         setColor(color);

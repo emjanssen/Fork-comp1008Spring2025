@@ -2,6 +2,8 @@ package wk4;
 
 public class Line {
     private Station[] stations;
+    // Declares an array of Station objects that belong to this line.
+    // Stores all the stations along the line in order.
     private Station startingStation, endingStation;
 
     public Station[] getStations() {

@@ -50,7 +50,12 @@ public class Fighter {
         setHealth(health);
         setName(name);
         setPower(power);
+
+        /* When calling in Main:
+        Fighter f1 = new Fighter("Batman", 50, 6);
+        Fighter f2 = new Fighter("Superman", 60, 7); */
     }
+
     public String toString(){
         return String.format("%s's attack power is %d and has a health level of %d",
                 name, power, health
