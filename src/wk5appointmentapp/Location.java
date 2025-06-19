@@ -3,12 +3,16 @@ package wk5appointmentapp;
 import java.util.Map;
 import java.util.HashMap;
 
-public class Location {
+public class Location{
 
     // learning how to use a map so each building can be stored with its relevant room options
     // to my understanding, 'final' prevents contents from ever being overwritten
     // Map<String, int[]> — maps building names to their list of rooms
     private static final Map<String, int[]> buildingRooms = new HashMap<>();
+
+
+
+
 
     static {
         // .put() — stores each building and its room array
