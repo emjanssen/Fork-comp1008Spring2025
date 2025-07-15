@@ -8,3 +8,26 @@ Your Turn:
 
 	Create concrete class Cylinder based ThreeDShape
 		-implement all missing abstract method
+
+
+Your Turn
+
+Create Interface Paw
+    max_strike_strength
+    min_strike_strengh
+
+    strike()
+
+Create Interface Scariness
+    min_heart_beat
+    max_heart_beat
+
+    fight()
+    flight()
+
+Create abstract class Canine
+    -research 2 properties and 2 actions that are common in Canines
+        -implement them
+
+Create a concrete class named Wolf
+    -extend Canine and implement Scariness & Paw

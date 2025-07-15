@@ -24,3 +24,17 @@ abstracts classes
     - CAN have all entities of concrete class
         constructors, instance variables, method, constants
     - dedicated SuperClass
+
+
+Interfaces
+    a list of requirements of a class
+        required actions
+            method definitions with no method body
+            constant values
+        access levels = public
+
+Classes can implement MANY Interfaces can h
+
+An interface can EXTEND 1 or MANY interfaces
+An interface cannot implement anything
+A class IMPLEMENTS an interface
