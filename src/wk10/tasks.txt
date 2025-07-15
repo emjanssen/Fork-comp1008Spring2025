@@ -1,0 +1,10 @@
+Your Turn:
+	Create an Abstract class named RoundedShape
+		-get it 1 property and 1 method (concrete/regular)
+		-base class from any of the abstract classes created
+
+	Create abstract class ThreeDShape
+		- create abstract method: volume
+
+	Create concrete class Cylinder based ThreeDShape
+		-implement all missing abstract method
