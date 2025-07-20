@@ -1,0 +1,40 @@
+polymorphism
+    poly    many
+    morphism    bodies/shapes/forms
+
+Overriding and Overloading are examples of Polymorphism
+
+One item can contain COMPONENTS of another item
+
+    abstract classes
+
+    interfaces care
+
+
+abstracts classes
+    - class that stores common properties/bahaviours
+        (grouped properties & actions)
+        Shape
+    - incomplete
+        - cannot be instantiated
+        - CAN have incomplete methods
+            -abstract methods
+                -method with no method body
+                    (no default implementation)
+    - CAN have all entities of concrete class
+        constructors, instance variables, method, constants
+    - dedicated SuperClass
+
+
+Interfaces
+    a list of requirements of a class
+        required actions
+            method definitions with no method body
+            constant values
+        access levels = public
+
+Classes can implement MANY Interfaces can h
+
+An interface can EXTEND 1 or MANY interfaces
+An interface cannot implement anything
+A class IMPLEMENTS an interface

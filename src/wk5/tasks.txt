@@ -24,5 +24,6 @@ Meeting
     Host
     List of Participants
     Description
+    Theme/topic
 
 In a class with a main method: use aka instantiate all classes
